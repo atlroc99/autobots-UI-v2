@@ -17,10 +17,12 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "preinstall": "echo Hello, I am PRE-INSTALL i RUN Before install",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "zip -r alc_ui_v2.zip $(pwd)/"
   },
   "eslintConfig": {
     "extends": [
