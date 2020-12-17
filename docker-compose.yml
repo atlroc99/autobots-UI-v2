@@ -1,0 +1,13 @@
+version: "3"
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: npm run start
+    container_name: alc-autobots-ui
+    ports:
+      - "4040:3000"
+    volumes:
+      - ./:/alc-autobots-ui
+      - /alc-autobots-ui/node_modules
